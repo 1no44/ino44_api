@@ -42,6 +42,9 @@ class ReportsController < ApplicationController
   def create
     @report = Report.new(params[:report])
 
+
+    logger.debug(params[:report])
+
     respond_to do |format|
       if @report.save
         format.html { redirect_to @report, notice: 'Report was successfully created.' }
