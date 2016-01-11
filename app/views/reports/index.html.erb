@@ -5,6 +5,7 @@
     <th>Latitude</th>
     <th>Longitude</th>
     <th>Comment</th>
+    <th>Image base64</th>
     <th>Date reported</th>
     <th></th>
     <th></th>
@@ -16,6 +17,7 @@
     <td><%= report.latitude %></td>
     <td><%= report.longitude %></td>
     <td><%= report.comment %></td>
+    <td><img src="data:image/jpeg;base64,<%= report.image_base64 %>" width="auto" height="100" /></td>
     <td><%= report.date_reported %></td>
     <td><%= link_to 'Show', report %></td>
     <td><%= link_to 'Edit', edit_report_path(report) %></td>
