@@ -58,8 +58,8 @@ module Ino44Api
     config.assets.version = '1.0'
 
     config.action_dispatch.default_headers = {
-      # 'Access-Control-Allow-Credentials' => 'true',
-      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Allow-Credentials' => 'true',
+      'Access-Control-Allow-Origin' => 'http://localhost',
       'Access-Control-Request-Method' => '*'
     }
   end
