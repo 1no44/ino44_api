@@ -1,6 +1,6 @@
 Ino44Api::Application.routes.draw do
   resources :reports
-
+  match '*path', to: 'application#cros', via: :options
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
