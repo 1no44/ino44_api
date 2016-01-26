@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   def cors_set_access_control_heades
     headers['Access-Control-Allow-Origin'] = 'http://1no44.github.io'
     headers['Access-Control-Allow-Methods'] = 'POST, GET, PUT, DELETE, OPTIONS'
-    headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, Accept, Authorization, Token'
+    headers['Access-Control-Allow-Headers'] = 'X-Requested-With, X-Prototype-Version, Origin, Content-Type, Accept, Authorization, Token'
     headers['Access-Control-Max-Age'] = "1728000"
   end
 
